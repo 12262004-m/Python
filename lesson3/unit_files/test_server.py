@@ -2,8 +2,8 @@ import unittest
 import sys
 import os
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from lesson3.files.variables import ACTION, ACCOUNT_NAME, ERROR, PRESENCE, TIME, USER, RESPONSE
-from lesson3.server import client_message
+from files.variables import ACTION, ACCOUNT_NAME, ERROR, PRESENCE, TIME, USER, RESPONSE
+from server import client_message
 
 class Test(unittest.TestCase):
     error_dict = {

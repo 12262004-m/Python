@@ -2,8 +2,8 @@ import sys
 import os
 import unittest
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from lesson3.client import create_presence, process_answer
-from lesson3.files.variables import PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, ACTION
+from client import create_presence, process_answer
+from files.variables import PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, ACTION
 
 class Test(unittest.TestCase):
     def test_def_create_presence(self):
