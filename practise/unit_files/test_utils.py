@@ -3,8 +3,8 @@ import sys
 import os
 import json
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from variables import ENCODING, ACTION, ACCOUNT_NAME, ERROR, PRESENCE, TIME, USER, RESPONSE
-from utils import send_message, get_message
+from files.variables import ENCODING, ACTION, ACCOUNT_NAME, ERROR, PRESENCE, TIME, USER, RESPONSE
+from files.utils import send_message, get_message
 
 class TestSocket(unittest.TestCase):
     def __init__(self, test_dict):
