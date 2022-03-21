@@ -1,5 +1,5 @@
 import json
-from variables import MAX_PACKAGE_LENGTH, ENCODING
+from files.variables import MAX_PACKAGE_LENGTH, ENCODING
 
 def get_message(client):
     encoded_response = client.recv(MAX_PACKAGE_LENGTH)

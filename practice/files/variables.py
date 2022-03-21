@@ -1,3 +1,5 @@
+import logging
+
 DEFAULT_PORT = 7777
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 
@@ -15,3 +17,5 @@ PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 RESPONDEFAULT_IP_ADDRESS = 'respondefault_ip_address'
+
+LOGGING_LEVEL = logging.DEBUG
