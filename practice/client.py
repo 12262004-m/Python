@@ -6,9 +6,11 @@ import logging
 from files.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
 from files.utils import get_message, send_message
 from errors import MissingFieldError
+from decorator import log
 
 CLIENT_LOGGER = logging.getLogger('client')
 
+@log
 def create_presence(name = 'Гость'):
     out = {
         ACTION: PRESENCE,
@@ -20,6 +22,7 @@ def create_presence(name = 'Гость'):
     CLIENT_LOGGER.debug(f'Для пользователя {name} сформировано {PRESENCE} сообщение ')
     return out
 
+@log
 def process_answer(message):
     CLIENT_LOGGER.debug(f'Разбор сообщения от сервера: {message}')
     if RESPONSE in message:
