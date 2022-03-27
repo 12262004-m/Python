@@ -1,0 +1,18 @@
+{
+    "orders": [
+        {
+            "item": "computer",
+            "quantity": "2",
+            "price": "87000",
+            "buyer": "Jacob Smith",
+            "date": "13.02.2022"
+        },
+        {
+            "item": "принтер",
+            "quantity": "5",
+            "price": "32000",
+            "buyer": "Иванов Иван Иванович",
+            "date": "11.01.2021"
+        }
+    ]
+}
