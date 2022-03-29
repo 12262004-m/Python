@@ -12,4 +12,4 @@ def log(func):
         f = func(*args, **kwargs)
         LOG.debug(f"Вызвана функция {func.__name__} с параметрами {args}, {kwargs} была вызвана из функции {inspect.stack()[1][3]}")
         return f
-    return saver()
+    return saver

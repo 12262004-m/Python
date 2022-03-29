@@ -32,7 +32,7 @@ def process_client_message(message, messages_list, client):
 def parser():
     argparser = argparse.ArgumentParser()
     argparser.add_argument('-p', default=DEFAULT_PORT, type=int, nargs='?')
-    argparser.add_argument('-a', default='', type=int, nargs='?')
+    argparser.add_argument('-a', default='', type=str, nargs='?')
     namespace = argparser.parse_args(sys.argv[1:])
     listen_address = namespace.a
     listen_port = namespace.p
