@@ -108,6 +108,5 @@ def main():
                 clients.remove(names[i[DESTINATION]])
                 del names[i[DESTINATION]]
         messages.clear()
-
 if __name__ == '__main__':
     main()
